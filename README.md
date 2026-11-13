@@ -113,22 +113,44 @@ Duplicates/          only with --move-to, the original sub-folder structure is k
 <a name="quick-start"></a>
 <p align="center"><a href="#contact"><img src="docs/readme/quick-start-en.svg" width="100%" alt="Quick start"></a></p>
 
-Requires **Python 3.10+**. No model download, no GPU.
+Requires **Python 3.10+** ([download](https://www.python.org/downloads/), and tick **Add python.exe to PATH** while installing). No model download, no GPU.
+
+**1. Open a terminal in the project folder**
+
+<table><tr><td>
+
+1. [Download the project](https://github.com/NoyaAdivi/photo-twins/archive/refs/heads/main.zip) and unzip it, or clone it with Git.
+2. Open the project folder in File Explorer.
+3. Click the address bar at the top, type `cmd` and press **Enter**. A black window opens, already inside the folder.
+</td></tr></table>
+
+**2. Install once**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-1. **Scan and get a report** (nothing moves):
-   ```bash
-   python photo_twins.py "D:\Pictures" --similar
-   ```
-2. **Open** `twins-report\report.html` and check the groups.
-3. **Move the extra copies** to a separate folder:
-   ```bash
-   python photo_twins.py "D:\Pictures" --similar --move-to "D:\Duplicates"
-   ```
-4. Look through `D:\Duplicates`. When you are happy, delete it yourself.
+**3. Find your twins** (a report only, nothing moves)
+
+Replace `D:\Pictures` with your own photo folder. Tip: open the folder in File Explorer, click the address bar and copy the path. Keep the quotes.
+
+```bash
+python photo_twins.py "D:\Pictures" --similar
+```
+
+**4. Look at the report**
+
+A new `twins-report` folder appears in the project folder. Double-click `report.html` inside it, and every group opens in your browser with the copy to keep marked in green.
+
+**5. Move the extra copies** (optional)
+
+```bash
+python photo_twins.py "D:\Pictures" --similar --move-to "D:\Duplicates"
+```
+Look through `D:\Duplicates`. When you are happy, delete it yourself.
+
+> [!TIP]
+> Start with a small folder to see how it works. Not sure what a group is? Open the report before moving anything.
 
 <a name="undo"></a>
 > [!TIP]

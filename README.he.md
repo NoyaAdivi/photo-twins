@@ -120,22 +120,44 @@ Duplicates/          only with --move-to, the original sub-folder structure is k
 <a name="quick-start"></a>
 <p align="center"><a href="#contact"><img src="docs/readme/quick-start-he.svg" width="100%" alt="התחלה מהירה"></a></p>
 
-צריך **Python 3.10 ומעלה**. בלי הורדת מודל ובלי כרטיס מסך.
+צריך **Python 3.10 ומעלה** ([הורדה](https://www.python.org/downloads/), ובזמן ההתקנה מסמנים **Add python.exe to PATH**). בלי הורדת מודל ובלי כרטיס מסך.
+
+**1. פותחים חלון פקודות בתיקיית הפרויקט**
+
+<table><tr><td>
+
+1. [מורידים את הפרויקט](https://github.com/NoyaAdivi/photo-twins/archive/refs/heads/main.zip) ופותחים את קובץ ה־zip, או משכפלים אותו עם Git.
+2. פותחים את תיקיית הפרויקט בסייר הקבצים.
+3. לוחצים על שורת הכתובת למעלה, מקלידים `cmd` ולוחצים **Enter**. נפתח חלון שחור, שכבר נמצא בתוך התיקייה.
+</td></tr></table>
+
+**2. מתקינים פעם אחת**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-1. **סריקה ודוח** (שום דבר לא זז):
-   ```bash
-   python photo_twins.py "D:\Pictures" --similar
-   ```
-2. **פותחים** את `twins-report\report.html` ובודקים את הקבוצות.
-3. **מעבירים את העותקים העודפים** לתיקייה נפרדת:
-   ```bash
-   python photo_twins.py "D:\Pictures" --similar --move-to "D:\Duplicates"
-   ```
-4. עוברים על `D:\Duplicates`, וכשהכול נראה טוב, מוחקים אותה בעצמך.
+**3. מחפשים תאומות** (רק דוח, שום דבר לא זז)
+
+במקום `D:\Pictures` שמים את תיקיית התמונות שלך. טיפ: פותחים אותה בסייר הקבצים, לוחצים על שורת הכתובת ומעתיקים את הנתיב. משאירים את המירכאות.
+
+```bash
+python photo_twins.py "D:\Pictures" --similar
+```
+
+**4. מסתכלים על הדוח**
+
+בתיקיית הפרויקט נוצרת תיקייה חדשה בשם `twins-report`. לוחצים פעמיים על `report.html` שבתוכה, וכל הקבוצות נפתחות בדפדפן, כשהעותק שנשאר מסומן בירוק.
+
+**5. מעבירים את העותקים העודפים** (לא חובה)
+
+```bash
+python photo_twins.py "D:\Pictures" --similar --move-to "D:\Duplicates"
+```
+עוברים על `D:\Duplicates`, וכשהכול נראה טוב, מוחקים אותה בעצמך.
+
+> [!TIP]
+> כדאי להתחיל בתיקייה קטנה כדי לראות איך זה עובד, ולפתוח את הדוח לפני שמזיזים משהו.
 
 <a name="undo"></a>
 > [!TIP]
