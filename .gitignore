@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Output of the script - never commit personal photos or results
+twins-report/
+moves.csv
+moves.undone.csv
+Duplicates/
+.pytest_cache/
+
+# Images (safety net so photos are never committed by accident)
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.heif
+*.webp
+*.tif
+*.tiff
+*.bmp
+*.gif
+
+# README images are allowed
+!docs/readme/*.png
