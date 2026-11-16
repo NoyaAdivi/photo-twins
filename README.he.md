@@ -85,7 +85,7 @@ flowchart LR
 <p align="center"><a href="#quick-start"><img src="docs/readme/report-he.svg" width="100%" alt="הדוח"></a></p>
 
 <p align="center">
-  <a href="#quick-start"><img src="docs/readme/showcase.png" width="100%" alt="הדוח של Photo Twins: קבוצות של תמונות כפולות, והעותק שנשאר מסומן"></a>
+  <a href="#quick-start"><img src="docs/readme/showcase-he.png" width="100%" alt="הדוח של Photo Twins: קבוצות של תמונות כפולות, והעותק שנשאר מסומן"></a>
 </p>
 
 <details open>
