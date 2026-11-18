@@ -74,7 +74,7 @@ flowchart LR
 <details open>
 <summary><b>🧬 The perceptual hash, in one minute</b></summary>
 
-Each image is shrunk to 9x8 gray pixels, and every pixel is compared with its right neighbour: brighter is `1`, darker is `0`. That gives a 64-bit fingerprint that barely changes when a photo is resized, re-compressed or gets a light filter. Two photos are twins when their fingerprints differ in at most `--distance` bits (the Hamming distance, 6 by default).
+Each image is shrunk to 9x8 gray pixels, and every pixel is compared with its right neighbor: brighter is `1`, darker is `0`. That gives a 64-bit fingerprint that barely changes when a photo is resized, re-compressed or gets a light filter. Two photos are twins when their fingerprints differ in at most `--distance` bits (the Hamming distance, 6 by default).
 
 Comparing every pair would take *n²* steps (800 million for 40,000 photos). A **BK-tree** uses the triangle inequality to skip whole branches, so each lookup touches only a small part of the library. Groups are built greedily around the best copy, so A~B and B~C never chain into one group when A and C look different.
 </details>

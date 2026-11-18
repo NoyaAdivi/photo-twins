@@ -154,7 +154,7 @@ python photo_twins.py "D:\Pictures" --similar
 ```bash
 python photo_twins.py "D:\Pictures" --similar --move-to "D:\Duplicates"
 ```
-עוברים על `D:\Duplicates`, וכשהכול נראה טוב, מוחקים אותה בעצמך.
+עוברים על `D:\Duplicates`, וכשהכול נראה טוב, מוחקים אותה בעצמכם.
 
 > [!TIP]
 > כדאי להתחיל בתיקייה קטנה כדי לראות איך זה עובד, ולפתוח את הדוח לפני שמזיזים משהו.
